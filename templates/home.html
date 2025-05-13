@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'main/header.html' %}
+
+  <body class="bg-pink-50 text-gray-800">
+
+    <!-- Главный блок -->
+    <section class="bg-pink-100 py-20 text-center">
+      <h2 class="text-4xl font-bold mb-4">Будь неотразимой каждый день</h2>
+      <p class="text-lg mb-6">Услуги макияжа, причесок и ухода за кожей от лучших мастеров</p>
+      <a href="#contact" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">
+        Записаться
+      </a>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="py-16 max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Наши услуги</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow p-6 text-center">
+          <h4 class="text-xl font-semibold mb-2">Макияж</h4>
+          <p class="text-gray-600">Дневной, вечерний, свадебный — подчеркнём твою красоту</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center">
+          <h4 class="text-xl font-semibold mb-2">Прически</h4>
+          <p class="text-gray-600">От укладки до сложных свадебных образов</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 text-center">
+          <h4 class="text-xl font-semibold mb-2">Уход за кожей</h4>
+          <p class="text-gray-600">Пилинги, маски, чистка и уходовые процедуры</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="py-16 bg-white text-center px-4">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-3xl font-bold mb-6">О нас</h3>
+        <p class="text-gray-700">Мы — команда опытных мастеров, работающих с любовью к каждому клиенту. В салоне "Niho" вас ждёт уютная атмосфера, качественные материалы и индивидуальный подход.</p>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-16 bg-pink-100 text-center px-4">
+      <h3 class="text-3xl font-bold mb-6">Контакты</h3>
+      <p class="text-lg mb-4">📍 г. Ташкент, Яшнабадский район, улица Чинор, Ориентир: Temur Food</p>
+      <p class="text-lg mb-4">📞 +998 90 959 09 79</p>
+      <p class="text-lg">📧 ozodaruzmetova24@gmail.com</p>
+    </section>
+
+    <!-- Подвал -->
+
+  </body>
+{% include 'main/footer.html' %}
+{% endblock %}
